@@ -12,7 +12,7 @@ const data = [
   {
     title : ' Custom Web Scraper',
     subtitle : 'Python + Selenium',
-    link : 'https://madhusagar.org/madhu/projects',
+    link : 'https://www.madhusagar.org/madhu/projects',
     image : '',
     date : '2020-06-01',
     desc : 'Python project done as to create a database of TV Serial Transcripts(more than 150 TV Shows + ~300 movies) for further analysis.'
@@ -20,7 +20,7 @@ const data = [
   {
     title : 'Automation of Task Arrival Alerts ',
     subtitle : 'Chrome extension',
-    link : 'https://madhusagar.org/madhu/projects',
+    link : 'https://www.madhusagar.org/madhu/projects',
     image : '',
     date : '2020-01-15',
     desc : 'Chrome Extension created for a friend who was working for the remote company Lionbridge.'
