@@ -2,51 +2,51 @@
 
 const data = [
   {
-    title : ' 5paisa API Python Wrapper',
-    subtitle : '',
-    link : 'https://github.com/madhu-sagar/aiohttp5paisa',
-    image : '',
-    date : '2020-07-15',
-    desc : ' Part of a bigger project related to building a trading system.'
+    title: ' 5paisa API Python Wrapper',
+    subtitle: '',
+    link: 'https://github.com/madhu-sagar/aiohttp5paisa',
+    image: '',
+    date: '2020-07-15',
+    desc: ' Part of a bigger project related to building a trading system.',
   },
   {
-    title : ' Custom Web Scraper',
-    subtitle : 'Python + Selenium',
-    link : 'https://www.madhusagar.org/madhu/projects',
-    image : '',
-    date : '2020-06-01',
-    desc : 'Python project done as to create a database of TV Serial Transcripts(more than 150 TV Shows + ~300 movies) for further analysis.'
+    title: ' Custom Web Scraper',
+    subtitle: 'Python + Selenium',
+    link: 'https://www.madhusagar.org/madhu/projects',
+    image: '',
+    date: '2020-06-01',
+    desc: 'Python project done as to create a database of TV Serial Transcripts(more than 150 TV Shows + ~300 movies) for further analysis.',
   },
   {
-    title : 'Automation of Task Arrival Alerts ',
-    subtitle : 'Chrome extension',
-    link : 'https://www.madhusagar.org/madhu/projects',
-    image : '',
-    date : '2020-01-15',
-    desc : 'Chrome Extension created for a friend who was working for the remote company Lionbridge.'
+    title: 'Automation of Task Arrival Alerts ',
+    subtitle: 'Chrome extension',
+    link: 'https://www.madhusagar.org/madhu/projects',
+    image: '',
+    date: '2020-01-15',
+    desc: 'Chrome Extension created for a friend who was working for the remote company Lionbridge.',
   },
   { 
-    title : 'Compiler Optimizations for OpenCL Compiler',
-    subtitle : '',
-    link : 'https://www.universitiespress.com/details?id=9788173717789',
-    image : '',
-    date : '2012-07-31',
-    desc : 'Focused effort on improving the performance of Cholesky Decomposition in OpenCL compiler.'
+    title: 'Compiler Optimizations for OpenCL Compiler',
+    subtitle: '',
+    link: 'https://www.universitiespress.com/details?id=9788173717789',
+    image: '',
+    date: '2012-07-31',
+    desc: 'Focused effort on improving the performance of Cholesky Decomposition in OpenCL compiler.',
   },
   {
-    title : 'BLAS level2 and level 3 optimizations for GPUs',
-    subtitile : '',
-    link : 'http://tcpp.cs.gsu.edu/curriculum/sites/default/files/a6-Neelima.pdf',
-    date : '2012-05-15',
-    desc : 'Final Year Undergrad project.'
+    title: 'BLAS level2 and level 3 optimizations for GPUs',
+    subtitile: '',
+    link: 'http://tcpp.cs.gsu.edu/curriculum/sites/default/files/a6-Neelima.pdf',
+    date: '2012-05-15',
+    desc: 'Final Year Undergrad project.'
   },
   {
-    title : ' We Will Meet Again',
-    subtitle : '',
-    image : '',
-    link : 'https://github.com/madhu-sagar/We-Will-Meet-Again',
-    date : '2011-05-01',
-    desc : 'An animated comedy in OpenGL based on xkcd.'
+    title: ' We Will Meet Again',
+    subtitle: '',
+    image: '',
+    link: 'https://github.com/madhu-sagar/We-Will-Meet-Again',
+    date: '2011-05-01',
+    desc: 'An animated comedy in OpenGL based on xkcd.',
   }
 ];
 //  const data = [
@@ -88,6 +88,5 @@ const data = [
 //      + 'Over 60,000 cats were classified before server bills made the project too expensive '
 //      + 'to continue hosting.',
 //   },
-// ]; 
-
+// ];
 export default data;
