@@ -25,7 +25,7 @@ const data = [
     date: '2020-01-15',
     desc: 'Chrome Extension created for a friend who was working for the remote company Lionbridge.',
   },
-  { 
+  {
     title: 'Compiler Optimizations for OpenCL Compiler',
     subtitle: '',
     link: 'https://www.universitiespress.com/details?id=9788173717789',
@@ -38,7 +38,7 @@ const data = [
     subtitile: '',
     link: 'http://tcpp.cs.gsu.edu/curriculum/sites/default/files/a6-Neelima.pdf',
     date: '2012-05-15',
-    desc: 'Final Year Undergrad project.'
+    desc: 'Final Year Undergrad project.',
   },
   {
     title: ' We Will Meet Again',
@@ -47,7 +47,7 @@ const data = [
     link: 'https://github.com/madhu-sagar/We-Will-Meet-Again',
     date: '2011-05-01',
     desc: 'An animated comedy in OpenGL based on xkcd.',
-  }
+  },
 ];
 //  const data = [
 //   {

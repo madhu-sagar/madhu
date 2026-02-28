@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import ReactMarkdown from 'react-markdown';
 import dayjs from 'dayjs';
@@ -10,7 +11,7 @@ import blogs from '../data/blogs';
 const LinkRenderer = ({ ...children }) => <Link {...children} />;
 
 const BlogPost = ({ match }) => {
-  const post = blogs.find((b) => b.slug === match.params.slug);
+  const post = blogs.find(b => b.slug === match.params.slug);
 
   if (!post) {
     return (
@@ -51,6 +52,14 @@ const BlogPost = ({ match }) => {
       </article>
     </Main>
   );
+};
+
+BlogPost.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      slug: PropTypes.string.isRequired,
+    }).isRequired,
+  }).isRequired,
 };
 
 export default BlogPost;

@@ -15,7 +15,7 @@ const validateText = (text) => {
   return re.test(text) || text.length === 0;
 };
 
-const deobfuscate = (parts) => parts.map((p) => atob(p)).join('');
+const deobfuscate = parts => parts.map(p => atob(p)).join('');
 
 const messages = [
   deobfuscate(['bWFkaHVzYWdhcg==', 'QA==', 'bWFkaHVzYWdhci5vcmc=']),
@@ -42,8 +42,6 @@ const useInterval = (callback, delay) => {
 const Contact = () => {
   const hold = 50; // ticks to wait after message is complete before rendering next message
   const delay = 50; // tick length in mS
-  const madhu = "madhu"
-
   const [idx, updateIter] = useState(0); // points to current message
   const [message, updateMessage] = useState(messages[idx]);
   const [char, updateChar] = useState(messages[idx].length); // points to current char
@@ -84,7 +82,7 @@ const Contact = () => {
           >
             <a href={validateText(message) ? `mailto:${messages}` : ''}>
               <span>{message}</span>
-              <span></span>
+              <span />
             </a>
           </div>
         </div>

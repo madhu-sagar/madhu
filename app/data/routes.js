@@ -21,9 +21,9 @@ const data = [
     label: 'Contact',
   },
   {
-    path : '/blog',
-    label: 'Blog'
-  }
+    path: '/blog',
+    label: 'Blog',
+  },
 ];
 
 export default data;

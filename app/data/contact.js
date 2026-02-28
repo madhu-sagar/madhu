@@ -1,6 +1,4 @@
 import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
-import faFacebook from '@fortawesome/fontawesome-free-brands/faFacebookF';
-import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram';
 import faLinkedinIn from '@fortawesome/fontawesome-free-brands/faLinkedinIn';
 import faMedium from '@fortawesome/fontawesome-free-brands/faMedium';
 import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';

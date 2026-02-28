@@ -5,7 +5,6 @@ import Helmet from 'react-helmet';
 import Main from '../layouts/Main';
 
 import Personal from '../components/Stats/Personal';
-import Site from '../components/Stats/Site';
 
 const Stats = () => (
   <Main>
@@ -17,7 +16,7 @@ const Stats = () => (
         </div>
       </header>
       <Personal />
-      //<Site />
+      {/* <Site /> */}
     </article>
   </Main>
 );

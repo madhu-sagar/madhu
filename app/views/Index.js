@@ -14,7 +14,7 @@ const Index = () => (
           <h2><Link to="/blog">Blog</Link></h2>
         </div>
       </header>
-      {blogs.map((post) => (
+      {blogs.map(post => (
         <div key={post.slug} className="blog-preview">
           <h3><Link to={`/blog/${post.slug}`}>{post.title}</Link></h3>
           <span className="published">{dayjs(post.date).format('MMMM D, YYYY')}</span>

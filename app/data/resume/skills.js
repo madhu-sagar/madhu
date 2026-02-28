@@ -175,7 +175,6 @@ export const skills = [
     compentency: 5,
     category: ['Design'],
   },
-  ,
   {
     title: 'Wireframing',
     compentency: 5,
@@ -200,5 +199,5 @@ export const skills = [
     title: 'Matplotib',
     compentency: 5,
     category: ['Data Science', 'Python'],
-  }
+  },
 ];

@@ -34,7 +34,8 @@ class Main extends Component {
           {this.props.children}
         </div>
         {!this.props.fullPage && <Nav />}
-      </div>);
+      </div>
+    );
   }
 }
 

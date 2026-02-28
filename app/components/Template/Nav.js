@@ -19,8 +19,10 @@ const Nav = () => (
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Madhu. Two words that could describe me would be curious and questioning. Interested in everything around me. Grateful for living in the present time. Life is wonderful.
-            
+      <p>
+        Hi, I&apos;m Madhu. Two words that could describe me would be
+        curious and questioning. Interested in everything around me.
+        Grateful for living in the present time. Life is wonderful.
       </p>
       <ul className="actions">
         <li>

@@ -2,9 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Course from './Courses/Course';
-import courses from '../../data/resume/courses';
 
-const getRows = courses => courses.sort((a, b) => {
+const getRows = items => items.sort((a, b) => {
   let ret = 0;
   if (a.university > b.university) ret = -1;
   else if (a.unversity < b.university) ret = 1;
@@ -15,7 +14,7 @@ const getRows = courses => courses.sort((a, b) => {
   <Course
     data={course}
     key={course.title}
-    last={idx === courses.length - 1}
+    last={idx === items.length - 1}
   />
 ));
 
@@ -46,4 +45,3 @@ Courses.defaultProps = {
 
 
 export default Courses;
-
