@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
@@ -12,6 +12,13 @@ const LinkRenderer = ({ ...children }) => <Link {...children} />;
 
 const BlogPost = ({ match }) => {
   const post = blogs.find(b => b.slug === match.params.slug);
+  const [markdown, setMarkdown] = useState(null);
+
+  useEffect(() => {
+    if (post) {
+      post.load().then(module => setMarkdown(module.default || module));
+    }
+  }, [post]);
 
   if (!post) {
     return (
@@ -42,13 +49,17 @@ const BlogPost = ({ match }) => {
             <span className="published">{dayjs(post.date).format('MMMM D, YYYY')}</span>
           </div>
         </header>
-        <ReactMarkdown
-          source={post.markdown}
-          renderers={{
-            Link: LinkRenderer,
-          }}
-          escapeHtml={false}
-        />
+        {markdown
+          ? (
+            <ReactMarkdown
+              source={markdown}
+              renderers={{
+                Link: LinkRenderer,
+              }}
+              escapeHtml={false}
+            />
+          )
+          : <p>Loading...</p>}
       </article>
     </Main>
   );

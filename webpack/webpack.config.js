@@ -52,7 +52,20 @@ export default {
         loader: 'style-loader!css-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]',
       }, {
         test: /\.scss$/,
-        loaders: 'style-loader!css-loader!sass-loader?modules&localIdentName=[name]---[local]---[hash:base64:5]',
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              silenceDeprecations: [
+                'legacy-js-api', 'import', 'global-builtin',
+                'slash-div', 'color-functions', 'if-function',
+                'elseif', 'new-global',
+              ],
+            },
+          },
+        ],
       }, {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader',
