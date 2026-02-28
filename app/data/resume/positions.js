@@ -22,8 +22,8 @@ const positions = [
     company : 'Robosoft Technologies',
     position : 'Software Engineer',
     link : '',
-    daterange : 'Sep 2020-Present'.
-    points : ['Working in React,Typescript,Node.js stack]
+    daterange : 'Sep 2020-Present',
+    points : ['Working in React,Typescript,Node.js stack']
   }
 ];
 
