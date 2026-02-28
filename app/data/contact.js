@@ -28,7 +28,7 @@ const data = [
     icon: faTwitter,
   },
   {
-    link: 'mailto:madhusagar@madhusagar.org',
+    link: `mailto:${atob('bWFkaHVzYWdhcg==')}@${atob('bWFkaHVzYWdhci5vcmc=')}`,
     label: 'Email',
     icon: faEnvelope,
   },
