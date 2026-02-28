@@ -1,0 +1,41 @@
+// Blog previews
+
+.blog-preview {
+  border-bottom: solid 1px _palette(border);
+  padding: 0 0 _size(element-margin) 0;
+  margin: 0 0 _size(element-margin) 0;
+
+  &:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  h3 {
+    margin-bottom: 0.25em;
+
+    a {
+      border-bottom: 0;
+      color: _palette(fg-bold);
+
+      &:hover {
+        color: _palette(accent);
+      }
+    }
+  }
+
+  .published {
+    color: _palette(fg-light);
+    display: block;
+    font-family: _font(family-heading);
+    font-size: 0.7em;
+    font-weight: _font(weight-heading-bold);
+    letter-spacing: _font(kerning-heading);
+    margin-bottom: 0.75em;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+  }
+}

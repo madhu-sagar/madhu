@@ -15,8 +15,10 @@ const validateText = (text) => {
   return re.test(text) || text.length === 0;
 };
 
+const deobfuscate = (parts) => parts.map((p) => atob(p)).join('');
+
 const messages = [
-  'madhusagar@madhusagar.org'
+  deobfuscate(['bWFkaHVzYWdhcg==', 'QA==', 'bWFkaHVzYWdhci5vcmc=']),
 ];
 
 const useInterval = (callback, delay) => {

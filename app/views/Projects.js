@@ -17,12 +17,14 @@ const Projects = () => (
           <p>A small vignette of stuff I have worked on</p>
         </div>
       </header>
-      {data.map(project => (
-        <Cell
-          data={project}
-          key={project.title}
-        />
-      ))}
+      <div className="project-grid">
+        {data.map(project => (
+          <Cell
+            data={project}
+            key={project.title}
+          />
+        ))}
+      </div>
     </article>
   </Main>
 );

@@ -3,17 +3,15 @@ import PropTypes from 'prop-types';
 import dayjs from 'dayjs';
 
 const Cell = ({ data }) => (
-  <div className="cell-container">
-    <article className="mini-post">
+  <div className="project-card">
+    <a href={data.link} className="project-card-link">
       <header>
-        <h3><a href={data.link}>{data.title}</a></h3>
+        <h3>{data.title}</h3>
+        {data.subtitle && <span className="subtitle">{data.subtitle}</span>}
         <time className="published">{dayjs(data.date).format('MMMM, YYYY')}</time>
       </header>
-     
-      <div className="newnewbox">
-        <p>{data.desc}</p>
-      </div>
-    </article>
+      <p className="desc">{data.desc}</p>
+    </a>
   </div>
 );
 
@@ -21,13 +19,9 @@ Cell.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
   }).isRequired,
 };
 
 export default Cell;
-//<a href={data.link} className="image"><img src={`${BASE_PATH}/${data.image}`} alt="" /></a> 
-//<p className="description">{data.desc}</p> 
-//
