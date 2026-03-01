@@ -1,5 +1,12 @@
 const data = [
   {
+    slug: 'why-humans-are-better-verifiers-than-generators',
+    title: 'Judgement Is the Most Valuable Skill Today',
+    date: '2026-03-01',
+    description: 'Now that AI has made generation cheap, there is no skill more valuable than judgement — and downstream from it, using judgement to make better decisions.',
+    load: () => import('./blogs/why-humans-are-better-verifiers-than-generators.md'),
+  },
+  {
     slug: 'the-web-browser-internals',
     title: 'The Web Browser Internals',
     date: '2021-09-22',
